@@ -2,7 +2,7 @@
 using HarmonyLib;
 using UnityEngine;
 
-namespace InvincibleCompanion;
+namespace ExampleMod;
 
 [BepInPlugin("yourname.example.mod", "Example Mod", "1.0.0.0")]
 public class Plugin : BaseUnityPlugin
