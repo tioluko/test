@@ -68,4 +68,21 @@
     <!-- Optional: You can add a message to confirm the copy -->
     <Message Text="Copied $(TargetFileName) to $(ModFolder)" Importance="high" />
   </Target>
+
+  <!-- Copying the important .dll file to build/, useful if you want to copy it yourself but don't want to dig through bin/...-->
+  <!-- <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <PropertyGroup>
+      <BuildOutputFolder>./build/</BuildOutputFolder>
+    </PropertyGroup>
+    
+    <MakeDir Directories="$(BuildOutputFolder)" />
+    
+    <Copy 
+      SourceFiles="$(TargetPath)"
+      DestinationFolder="$(ModFolder)"
+      SkipUnchangedFiles="true"
+    />
+    
+    <Message Text="Copied $(TargetFileName) to $(BuildOutputFolder)" Importance="high" />
+  </Target> -->
 </Project>
