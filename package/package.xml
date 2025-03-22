@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Meta>
+	<title>Adventurers from Gensokyo</title>
+	<id>Luko.elinplugins.tohoadv</id>
+	<author>Luko</author>
+	<builtin>false</builtin>
+	<loadPriority>100</loadPriority>
+	<version>1.0</version>
+	<description>
+	</description>
+</Meta>
