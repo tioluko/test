@@ -13,4 +13,11 @@ public class Plugin : BaseUnityPlugin
         var harmony = new Harmony("yourname.example.mod");
         harmony.PatchAll();
     }
+    public void OnStartCore()
+    {
+        var dir = Path.GetDirectoryName(Info.Location);
+        var excel = dir + "/SourceCard.xlsx";
+        var sources = Core.Instance.sources;
+        ModUtil.ImportExcel(excel, "Thing", sources.things);
+    }
 }
